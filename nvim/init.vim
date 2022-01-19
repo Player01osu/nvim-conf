@@ -1,7 +1,6 @@
 syntax on
 
 set clipboard+=unnamedplus
-
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -26,6 +25,8 @@ set wildmode=longest,list,full
 " set cursorline
 " set cursorcolumn
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal = 0
@@ -57,6 +58,7 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'vim-utils/vim-man'
 Plug 'godlygeek/tabular'
 Plug 'mbbill/undotree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Pretty
 Plug 'ap/vim-css-color'
