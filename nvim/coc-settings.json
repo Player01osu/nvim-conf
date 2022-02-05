@@ -1,5 +1,5 @@
 {
-"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "c"],
+"coc.preferences.formatOnSaveFiletypes": ["css", "c"],
 "languageserver": {
   "ccls": {
     "command": "ccls",
